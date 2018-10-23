@@ -13,6 +13,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var tableView: UITableView!
     //Table view object
     var videos:[Video] = [Video]()
+    var  selectedVideo:Video?
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +84,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Take note of wich view the user selected
+        self.selectedVideo =  self.videos[indexPath.row]
+        
+        // Call the Segue
+        self.performSegue(withIdentifier: "goToDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get a reference to the destination view controller
+        let detailViewController = segue.destination as! VideoDetailViewController
+        // Set the selected video property of the destination view controller
+        detailViewController.selectedVideo = self.selectedVideo
+    }
+    
 }
 
 

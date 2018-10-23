@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-fQ-1bN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-fQ-1bN">
                                 <rect key="frame" x="20" y="264" width="335" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="kpe-f2-G3c"/>
@@ -26,8 +26,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFO-C6-At7">
-                                <rect key="frame" x="20" y="384" width="335" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFO-C6-At7">
+                                <rect key="frame" x="20" y="384" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -60,6 +60,7 @@
                         <outlet property="descriptionLabel" destination="vFO-C6-At7" id="JQh-Eo-0t4"/>
                         <outlet property="titleLabel" destination="YFZ-fQ-1bN" id="0QV-2j-yoD"/>
                         <outlet property="webView" destination="2Z0-C3-BsC" id="HyR-uF-xmh"/>
+                        <outlet property="webViewHeightConstraint" destination="IzS-IV-NBm" id="cB1-H7-UBX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jN-nM-Q3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,9 +119,6 @@
                                                 <constraint firstAttribute="bottom" secondItem="Dqw-ko-fZh" secondAttribute="bottom" id="xzZ-vC-02x"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="XyN-id-Nv5" kind="show" id="LL3-kX-XWa"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -137,6 +135,7 @@
                     <navigationItem key="navigationItem" id="jrq-au-0UU"/>
                     <connections>
                         <outlet property="tableView" destination="qWg-1K-rmm" id="8ze-eN-Gwt"/>
+                        <segue destination="XyN-id-Nv5" kind="show" identifier="goToDetail" id="fit-gN-BtT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
