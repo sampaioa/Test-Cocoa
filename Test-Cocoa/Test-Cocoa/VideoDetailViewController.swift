@@ -10,8 +10,7 @@ import UIKit
 
 // Andre Update 23/10/2018
 // WG update 23/10/2018
-// AS C2
-//A3
+// WG
 
 class VideoDetailViewController: UIViewController {
     //@IBOutlet weak var webView: WKWebView!
