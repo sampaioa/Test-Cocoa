@@ -1,0 +1,22 @@
+
+platform :ios, '10.0'
+
+target 'Test-Cocoa' do
+
+  use_frameworks!
+
+  # Pods for Test-Cocoa
+
+pod "YouTube-Player-iOS-Helper", "~>0.1"
+
+  target 'Test-CocoaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Test-CocoaUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
