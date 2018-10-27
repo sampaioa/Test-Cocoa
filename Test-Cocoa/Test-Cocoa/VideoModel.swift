@@ -7,8 +7,43 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class VideoModel: NSObject {
+    
+    func getFeedVideos() {
+        
+        let API_KEY = "AIzaSyAlo2-408PmIdoH6GqNp1iKhZkR00vO_GM"
+        let UPLOADS_PLAYLIST_ID = "PLjEkvB9j5CIlE7gviSRRMCzY_b4S5cNEV"
+        let URL_YOUTUBE = "https://www.googleapis.com/youtube/v3/playlistItems"
+        
+        
+        //Fetch the videos dynamically through the YouTube API
+        
+        Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY,"channelId":"12312"], encoding: JSONEncoding.default, headers: nil).responseJSON { (response) -> Void in
+            
+            if let JSON = response.result.value as? [String: Any] {
+                let JSON_RESULTS = JSON["entry"] as Any
+                
+                if let JSON_VIDEOS = JSON_RESULTS as? [[String: Any]] {
+                    
+                for video in JSON_VIDEOS
+                {
+                    print(video)
+                    
+                }
+                }
+            }
+        }
+        
+        
+        //Alamofire.request(URL_YOUTUBE, parameters:["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY,"channelId":"12312"], encoding: ParameterEncoding.URL, headers: nil)
+        
+        
+    }
+    
+    
     func getVideos() -> [Video] {
         //Create an empty array of videos objects
         var videos = [Video]()

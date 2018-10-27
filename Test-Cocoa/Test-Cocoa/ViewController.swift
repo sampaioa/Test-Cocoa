@@ -20,7 +20,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.videos = VideoModel().getVideos()
+        //self.videos = VideoModel().getVideos()
+        
+        let model = VideoModel()
+        //Fire of request to get videos
+        model.getVideos()
+        
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
