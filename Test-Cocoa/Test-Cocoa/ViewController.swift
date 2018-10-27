@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let model = VideoModel()
         //Fire of request to get videos
-        model.getVideos()
+        model.getFeedVideos()
         
         
         self.tableView.dataSource = self

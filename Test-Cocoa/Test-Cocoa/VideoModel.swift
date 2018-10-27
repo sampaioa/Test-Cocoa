@@ -21,19 +21,19 @@ class VideoModel: NSObject {
         
         //Fetch the videos dynamically through the YouTube API
         
-        Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY,"channelId":"12312"], encoding: JSONEncoding.default, headers: nil).responseJSON { (response) -> Void in
+        Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
             
-            if let JSON = response.result.value as? [String: Any] {
-                let JSON_RESULTS = JSON["entry"] as Any
+            if let JSON = response.result.value {
+                //let JSON_RESULTS = JSON["entry"] as Any
                 
-                if let JSON_VIDEOS = JSON_RESULTS as? [[String: Any]] {
-                    
-                for video in JSON_VIDEOS
+                //if let JSON_VIDEOS = JSON_RESULTS as? NSArray {
+                
+                for video in JSON["items"] as? NSArray
                 {
                     print(video)
                     
                 }
-                }
+                //}
             }
         }
         
