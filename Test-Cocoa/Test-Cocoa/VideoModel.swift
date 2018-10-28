@@ -23,12 +23,12 @@ class VideoModel: NSObject {
         
         Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
             
-            if let JSON = response.result.value {
+            if let JSON = response.result.value as? [String: Any] {
                 //let JSON_RESULTS = JSON["entry"] as Any
                 
                 //if let JSON_VIDEOS = JSON_RESULTS as? NSArray {
                 
-                for video in JSON["items"] as? NSArray
+                for video in JSON["items"] as! [[String: Any]]
                 {
                     print(video)
                     
