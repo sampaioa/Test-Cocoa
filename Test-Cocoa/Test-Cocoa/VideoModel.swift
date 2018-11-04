@@ -26,16 +26,20 @@ class VideoModel: NSObject {
 
         //Fetch the videos dynamically through the YouTube API
         
-        Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
+        Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["maxResults": "25", "part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
             
             if let JSON = response.result.value as? [String: Any] {
                 //let JSON_RESULTS = JSON["entry"] as Any
                 var arrayOfVideos = [Video]()
+                //print(arrayOfVideos)
                 if let playlist = JSON["items"] as? [Any] {
+                    
+                    let video = JSON["items"] as! NSArray
+                    print(video)
                     
                     for i in 0..<playlist.count {
                 
-                    //print(video)
+                    
                     
                     let videoObj = Video()
                         if let video = playlist[i] as? [String: Any] {
@@ -55,6 +59,14 @@ class VideoModel: NSObject {
                                 if let maxres = thumbnails["maxres"] as? [String: Any] {
                                     if let url = maxres["url"] as? String {
                                         videoObj.videoThumbnailUrl = url
+                                        
+                                    }else{
+                                        if let maxres = thumbnails["high"] as? [String: Any] {
+                                            if let url = maxres["url"] as? String {
+                                                videoObj.videoThumbnailUrl = url
+                                            }
+                                            
+                                        }
                                     }
                                 }
                                 }
