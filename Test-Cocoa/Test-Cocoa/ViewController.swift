@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, VideoModelDelegate {
     
     @IBOutlet var tableView: UITableView!
     //Table view object
     var videos:[Video] = [Video]()
     var  selectedVideo:Video?
-    
+    let model: VideoModel = VideoModel()
     
     
     override func viewDidLoad() {
@@ -22,7 +22,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         //self.videos = VideoModel().getVideos()
         
-        let model = VideoModel()
+        self.model.delegate = self
+        //let model = VideoModel()
         //Fire of request to get videos
         model.getFeedVideos()
         
@@ -32,6 +33,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     
     }
+    
+    //VideoModel Delegate Method
+    func dataReady(){
+        //Access the video Objects that have been downloaded
+        self.videos = self.model.videoArray
+        
+        //Tell the tableview to reload
+        self.tableView.reloadData()
+        
+    }
+    
+    //TableView Delegate Methods
+
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         //Get the with of the screen to calculate the heigh of he row
@@ -55,7 +69,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //cell.textLabel?.text = videoTitle
         
         //Construct the Video Thumbnail
-        let videoThumbnailUrlString = "https://i1.ytimg.com/vi/" + videos[indexPath.row].videoID + "/maxresdefault.jpg"
+        let videoThumbnailUrlString = videos[indexPath.row].videoThumbnailUrl
         
         // Create an NSURL Object
         let videoThumbnailUrl = URL(string: videoThumbnailUrlString)

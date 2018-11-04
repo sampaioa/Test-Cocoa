@@ -8,31 +8,72 @@
 
 import UIKit
 import Alamofire
-
+protocol VideoModelDelegate {
+    func dataReady()
+}
 
 class VideoModel: NSObject {
     
+    let API_KEY = "AIzaSyAlo2-408PmIdoH6GqNp1iKhZkR00vO_GM"
+    let UPLOADS_PLAYLIST_ID = "PLjEkvB9j5CIlE7gviSRRMCzY_b4S5cNEV"
+    let URL_YOUTUBE = "https://www.googleapis.com/youtube/v3/playlistItems"
+    var videoArray = [Video]()
+    var delegate:VideoModelDelegate?
+    
+    
     func getFeedVideos() {
         
-        let API_KEY = "AIzaSyAlo2-408PmIdoH6GqNp1iKhZkR00vO_GM"
-        let UPLOADS_PLAYLIST_ID = "PLjEkvB9j5CIlE7gviSRRMCzY_b4S5cNEV"
-        let URL_YOUTUBE = "https://www.googleapis.com/youtube/v3/playlistItems"
-        
-        
+
         //Fetch the videos dynamically through the YouTube API
         
         Alamofire.request(URL_YOUTUBE, method: .get, parameters: ["part":"snippet","playlistId": UPLOADS_PLAYLIST_ID,"key": API_KEY], encoding: URLEncoding.default, headers: nil).responseJSON { (response) -> Void in
             
             if let JSON = response.result.value as? [String: Any] {
                 //let JSON_RESULTS = JSON["entry"] as Any
+                var arrayOfVideos = [Video]()
+                if let playlist = JSON["items"] as? [Any] {
+                    
+                    for i in 0..<playlist.count {
                 
-                //if let JSON_VIDEOS = JSON_RESULTS as? NSArray {
-                
-                for video in JSON["items"] as! [[String: Any]]
-                {
-                    print(video)
+                    //print(video)
+                    
+                    let videoObj = Video()
+                        if let video = playlist[i] as? [String: Any] {
+                            if let videoId = video["id"] as? String {
+                                videoObj.videoID = videoId
+                            }
+                            if let snippet = video["snippet"] as? [String: Any] {
+                                if let videoTitle = snippet["title"] as? String {
+                                    videoObj.videoTitle = videoTitle
+                                }
+                                
+                                if let videoDescription = snippet["description"] as? String {
+                                    videoObj.videoDescription = videoDescription
+                                }
+                            
+                            if let thumbnails = snippet["thumbnails"] as? [String: Any]{
+                                if let maxres = thumbnails["maxres"] as? [String: Any] {
+                                    if let url = maxres["url"] as? String {
+                                        videoObj.videoThumbnailUrl = url
+                                    }
+                                }
+                                }
+                            }
+                    //videoObj.videoTitle = Video.value(forKeyPath: "snipper.tittle") as! String
+                    //videoObj.videoDescription = Video.value(forKeyPath: "snippet.description") as! String
+                    //videoObj.videoThumbnailURL = Video.value(forKeyPath: "snippet.thumbnails.maxres.url") as! String
+                    arrayOfVideos.append(videoObj)
+                        }
+                        
+                    }
+                    self.videoArray = arrayOfVideos
+                    //Notify the Delegate that the data is ready
+                    if self.delegate != nil {
+                        self.delegate!.dataReady()
+                    }
                     
                 }
+                
                 //}
             }
         }
@@ -59,38 +100,7 @@ class VideoModel: NSObject {
         videos.append(video1)
         //Return array to the caller
         
-        //Create a video object
-        let video2 = Video()
         
-        // Assign properties
-        video2.videoID = "GW7Dl-fUM10"
-        video2.videoTitle = "Estreia da Semana: O Primeiro Homem"
-        video2.videoDescription = "Novo filme do diretor Damien Chazelle (Whiplash, La la Land), conta a história do astronauta Neil Armstrong e a missão de viagem à lua em Julho de 1969."
-        // Append it into the videos array
-        videos.append(video2)
-        //Return array to the caller
-        
-        //Create a video object
-        let video3 = Video()
-        
-        // Assign properties
-        video3.videoID = "GW7Dl-fUM10"
-        video3.videoTitle = "Estreia da Semana: O Primeiro Homem"
-        video3.videoDescription = "Novo filme do diretor Damien Chazelle (Whiplash, La la Land), conta a história do astronauta Neil Armstrong e a missão de viagem à lua em Julho de 1969."
-        // Append it into the videos array
-        videos.append(video3)
-        //Return array to the caller
-        
-        //Create a video object
-        let video4 = Video()
-        
-        // Assign properties
-        video4.videoID = "GW7Dl-fUM10"
-        video4.videoTitle = "Estreia da Semana: O Primeiro Homem"
-        video4.videoDescription = "Novo filme do diretor Damien Chazelle (Whiplash, La la Land), conta a história do astronauta Neil Armstrong e a missão de viagem à lua em Julho de 1969."
-        // Append it into the videos array
-        videos.append(video4)
-        //Return array to the caller
         
         
         

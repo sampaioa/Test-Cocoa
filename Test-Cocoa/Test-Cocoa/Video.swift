@@ -12,5 +12,6 @@ class Video: NSObject {
     var videoID:String = ""
     var videoTitle:String = ""
     var videoDescription:String = ""
+    var videoThumbnailUrl:String = ""
 
 }
