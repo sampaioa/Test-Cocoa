@@ -42,11 +42,12 @@ class VideoModel: NSObject {
                     
                     
                     let videoObj = Video()
-                        if let video = playlist[i] as? [String: Any] {
-                            if let videoId = video["id"] as? String {
-                                videoObj.videoID = videoId
+                        if let video = playlist[i] as? [String: Any]{
+                            if let snippet = video["snippet"] as? [String: Any]{
+                                if let resourceId = snippet["resourceId"] as? [String: Any] {
+                                    if let videoId = resourceId["videoId"] as? String {
+                                        videoObj.videoID = videoId
                             }
-                            if let snippet = video["snippet"] as? [String: Any] {
                                 if let videoTitle = snippet["title"] as? String {
                                     videoObj.videoTitle = videoTitle
                                 }
@@ -56,12 +57,12 @@ class VideoModel: NSObject {
                                 }
                             
                             if let thumbnails = snippet["thumbnails"] as? [String: Any]{
-                                if let maxres = thumbnails["maxres"] as? [String: Any] {
+                                if let maxres = thumbnails["medium"] as? [String: Any] {
                                     if let url = maxres["url"] as? String {
                                         videoObj.videoThumbnailUrl = url
                                         
                                     }else{
-                                        if let maxres = thumbnails["high"] as? [String: Any] {
+                                        if let maxres = thumbnails["maxres"] as? [String: Any] {
                                             if let url = maxres["url"] as? String {
                                                 videoObj.videoThumbnailUrl = url
                                             }
@@ -69,7 +70,7 @@ class VideoModel: NSObject {
                                         }
                                     }
                                 }
-                                }
+                                }}
                             }
                     //videoObj.videoTitle = Video.value(forKeyPath: "snipper.tittle") as! String
                     //videoObj.videoDescription = Video.value(forKeyPath: "snippet.description") as! String
