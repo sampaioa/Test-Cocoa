@@ -8,21 +8,16 @@
 
 import UIKit
 
-// Andre Update 23/10/2018
-// WG update 23/10/2018
-// WG
-//Ahhh
-// AS C2
-
 
 class VideoDetailViewController: UIViewController {
-    //@IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var webViewHeightConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var webViewHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var webViewHeight: NSLayoutConstraint!
     
     var selectedVideo:Video?
     
@@ -40,7 +35,9 @@ class VideoDetailViewController: UIViewController {
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation){
         let width = self.view.frame.size.width
         let height = width/320 * 180
-        self.webViewHeightConstraint.constant = height
+        self.webViewHeight.constant = height
+        
+        
     
     }
     
@@ -55,7 +52,7 @@ class VideoDetailViewController: UIViewController {
             let height = width/320 * 180
             
             // Adjust the height of the webview constrain
-            self.webViewHeightConstraint.constant = height
+            self.webViewHeight.constant = height
             
             
             
