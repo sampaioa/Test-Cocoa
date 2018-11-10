@@ -11,14 +11,18 @@ import UIKit
 
 class VideoDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var webView: UIWebView!
+
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var webView: UIWebView!
     
     //@IBOutlet weak var webViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var webViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var webViewWidth: NSLayoutConstraint!
     
+    
+
     var selectedVideo:Video?
     
     //var vid:Video?
@@ -33,15 +37,17 @@ class VideoDetailViewController: UIViewController {
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation){
-        let width = self.view.frame.size.width
-        let height = width/320 * 180
-        self.webViewHeight.constant = height
-        
+        webViewLoad()
         
     
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        webViewLoad()
+
+        }
+    
+    func webViewLoad(){
         
         if let vid = self.selectedVideo{
             self.titleLabel.text = vid.videoTitle
@@ -53,14 +59,21 @@ class VideoDetailViewController: UIViewController {
             
             // Adjust the height of the webview constrain
             self.webViewHeight.constant = height
+            self.webViewWidth.constant = width
+            self.webView.reload()
             
             
             
             let videoEmbedString = "<html><head><style type=\"text/css\">body {background-color: transparent;color: white;}</style></head><body style=\"margin:0\"><iframe frameBorder=\"0\" height=\"" + String(Int(Float(height))) + "\" width=\"" + String(Int(Float(width))) + "\" src=\"http://www.youtube.com/embed/" + vid.videoID + "?showinfo=0&modestbranding=1&frameborder=0&rel=0\"></iframe></body></html>"
             
             self.webView.loadHTMLString(videoEmbedString, baseURL: nil)
+            
         }
+    
+    
     }
+    
+
 
     /*
     // MARK: - Navigation

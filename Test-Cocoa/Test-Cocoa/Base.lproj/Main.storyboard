@@ -48,6 +48,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="180"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="5g8-d7-dmc"/>
                                     <constraint firstAttribute="height" constant="180" id="rYv-Gy-vMb"/>
                                 </constraints>
                             </webView>
@@ -80,6 +81,7 @@
                         <outlet property="titleLabel" destination="YFZ-fQ-1bN" id="0QV-2j-yoD"/>
                         <outlet property="webView" destination="2Z0-C3-BsC" id="HyR-uF-xmh"/>
                         <outlet property="webViewHeight" destination="rYv-Gy-vMb" id="6ko-eO-RNQ"/>
+                        <outlet property="webViewWidth" destination="5g8-d7-dmc" id="rg7-ag-cBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jN-nM-Q3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
