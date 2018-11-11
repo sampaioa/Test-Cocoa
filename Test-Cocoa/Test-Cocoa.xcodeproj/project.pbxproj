@@ -17,6 +17,11 @@
 		099D53072175C1BC00E7B228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099D53052175C1BC00E7B228 /* LaunchScreen.storyboard */; };
 		099D53122175C1BF00E7B228 /* Test_CocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D53112175C1BF00E7B228 /* Test_CocoaTests.swift */; };
 		099D531D2175C1BF00E7B228 /* Test_CocoaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D531C2175C1BF00E7B228 /* Test_CocoaUITests.swift */; };
+		09F1F55421981097000D2FCB /* farias_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F55321981096000D2FCB /* farias_header.png */; };
+		09F1F5582198118B000D2FCB /* Header.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F5552198118B000D2FCB /* Header.jpg */; };
+		09F1F55A2198118B000D2FCB /* Logo_Official.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F5572198118B000D2FCB /* Logo_Official.png */; };
+		09F1F56421981BA3000D2FCB /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F56321981BA3000D2FCB /* Header.png */; };
+		09F1F568219821FB000D2FCB /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F567219821FB000D2FCB /* Logo.png */; };
 		25D7F9CDA5875C6BC08EA790 /* Pods_Test_CocoaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E26AE9270DECFAFB8BA8E /* Pods_Test_CocoaTests.framework */; };
 		93370C40207B8D5B7028EE34 /* Pods_Test_CocoaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB66DC7A0D94D2A897FF00B /* Pods_Test_CocoaUITests.framework */; };
 		AD3361459E9A3A27DE84ED16 /* Pods_Test_Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78062E82384ABB3375FFAFA8 /* Pods_Test_Cocoa.framework */; };
@@ -56,6 +61,11 @@
 		099D53182175C1BF00E7B228 /* Test-CocoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-CocoaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D531C2175C1BF00E7B228 /* Test_CocoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CocoaUITests.swift; sourceTree = "<group>"; };
 		099D531E2175C1BF00E7B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F1F55321981096000D2FCB /* farias_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farias_header.png; sourceTree = SOURCE_ROOT; };
+		09F1F5552198118B000D2FCB /* Header.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Header.jpg; sourceTree = SOURCE_ROOT; };
+		09F1F5572198118B000D2FCB /* Logo_Official.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Official.png; sourceTree = SOURCE_ROOT; };
+		09F1F56321981BA3000D2FCB /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = SOURCE_ROOT; };
+		09F1F567219821FB000D2FCB /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = SOURCE_ROOT; };
 		25248CF59E7F66C7FABAFC53 /* Pods-Test-CocoaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-CocoaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-CocoaTests/Pods-Test-CocoaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		34ACDB1D00CA10F976C7A409 /* Pods-Test-Cocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-Cocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-Cocoa/Pods-Test-Cocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		55B4B6328580DACE7455E15C /* Pods-Test-CocoaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-CocoaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-CocoaTests/Pods-Test-CocoaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +130,11 @@
 		099D52FB2175C19E00E7B228 /* Test-Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				09F1F567219821FB000D2FCB /* Logo.png */,
+				09F1F5552198118B000D2FCB /* Header.jpg */,
+				09F1F5572198118B000D2FCB /* Logo_Official.png */,
+				09F1F56321981BA3000D2FCB /* Header.png */,
+				09F1F55321981096000D2FCB /* farias_header.png */,
 				099D52FC2175C19E00E7B228 /* AppDelegate.swift */,
 				099D52FE2175C19E00E7B228 /* ViewController.swift */,
 				09250004217DA76B004B0350 /* VideoDetailViewController.swift */,
@@ -283,7 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				099D53072175C1BC00E7B228 /* LaunchScreen.storyboard in Resources */,
+				09F1F5582198118B000D2FCB /* Header.jpg in Resources */,
+				09F1F55A2198118B000D2FCB /* Logo_Official.png in Resources */,
 				099D53042175C1BC00E7B228 /* Assets.xcassets in Resources */,
+				09F1F568219821FB000D2FCB /* Logo.png in Resources */,
+				09F1F55421981097000D2FCB /* farias_header.png in Resources */,
+				09F1F56421981BA3000D2FCB /* Header.png in Resources */,
 				099D53022175C19E00E7B228 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

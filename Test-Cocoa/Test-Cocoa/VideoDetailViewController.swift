@@ -37,7 +37,7 @@ class VideoDetailViewController: UIViewController {
     }
     
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation){
-        webViewLoad()
+        //webViewLoad()
         
     
     }
