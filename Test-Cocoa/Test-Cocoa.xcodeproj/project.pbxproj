@@ -22,6 +22,19 @@
 		09F1F55A2198118B000D2FCB /* Logo_Official.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F5572198118B000D2FCB /* Logo_Official.png */; };
 		09F1F56421981BA3000D2FCB /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F56321981BA3000D2FCB /* Header.png */; };
 		09F1F568219821FB000D2FCB /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1F567219821FB000D2FCB /* Logo.png */; };
+		09F229C0219AC3C90034E9D7 /* LogoIcon 2020.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229BD219AC3C90034E9D7 /* LogoIcon 2020.png */; };
+		09F229C1219AC3C90034E9D7 /* LogoIcon4040.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229BE219AC3C90034E9D7 /* LogoIcon4040.png */; };
+		09F229C2219AC3C90034E9D7 /* LogoIcon 6060.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229BF219AC3C90034E9D7 /* LogoIcon 6060.png */; };
+		09F229C6219AC4E30034E9D7 /* LogoIcon 8080.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229C5219AC4E30034E9D7 /* LogoIcon 8080.png */; };
+		09F229C8219AC5100034E9D7 /* LogoIcon 2929.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229C7219AC50F0034E9D7 /* LogoIcon 2929.png */; };
+		09F229CA219AC5900034E9D7 /* LogoIcon 120120.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229C9219AC5900034E9D7 /* LogoIcon 120120.png */; };
+		09F229CC219AC5D30034E9D7 /* LogoIcon 5858.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229CB219AC5D30034E9D7 /* LogoIcon 5858.png */; };
+		09F229CE219AC62B0034E9D7 /* LogoIcon 8787.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229CD219AC62B0034E9D7 /* LogoIcon 8787.png */; };
+		09F229D0219AC6630034E9D7 /* LogoIcon 180180.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229CF219AC6630034E9D7 /* LogoIcon 180180.png */; };
+		09F229D2219AC69B0034E9D7 /* LogoIcon 7676.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229D1219AC69B0034E9D7 /* LogoIcon 7676.png */; };
+		09F229D4219AC6C40034E9D7 /* LogoIcon 152152.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229D3219AC6C40034E9D7 /* LogoIcon 152152.png */; };
+		09F229D6219AC6E80034E9D7 /* LogoIcon 167167.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229D5219AC6E80034E9D7 /* LogoIcon 167167.png */; };
+		09F229D8219AC71C0034E9D7 /* LogoIcon 10241024.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F229D7219AC71B0034E9D7 /* LogoIcon 10241024.png */; };
 		25D7F9CDA5875C6BC08EA790 /* Pods_Test_CocoaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E26AE9270DECFAFB8BA8E /* Pods_Test_CocoaTests.framework */; };
 		93370C40207B8D5B7028EE34 /* Pods_Test_CocoaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB66DC7A0D94D2A897FF00B /* Pods_Test_CocoaUITests.framework */; };
 		AD3361459E9A3A27DE84ED16 /* Pods_Test_Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78062E82384ABB3375FFAFA8 /* Pods_Test_Cocoa.framework */; };
@@ -66,6 +79,19 @@
 		09F1F5572198118B000D2FCB /* Logo_Official.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Official.png; sourceTree = SOURCE_ROOT; };
 		09F1F56321981BA3000D2FCB /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = SOURCE_ROOT; };
 		09F1F567219821FB000D2FCB /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = SOURCE_ROOT; };
+		09F229BD219AC3C90034E9D7 /* LogoIcon 2020.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 2020.png"; sourceTree = SOURCE_ROOT; };
+		09F229BE219AC3C90034E9D7 /* LogoIcon4040.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoIcon4040.png; sourceTree = SOURCE_ROOT; };
+		09F229BF219AC3C90034E9D7 /* LogoIcon 6060.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 6060.png"; sourceTree = SOURCE_ROOT; };
+		09F229C5219AC4E30034E9D7 /* LogoIcon 8080.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 8080.png"; sourceTree = SOURCE_ROOT; };
+		09F229C7219AC50F0034E9D7 /* LogoIcon 2929.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 2929.png"; sourceTree = SOURCE_ROOT; };
+		09F229C9219AC5900034E9D7 /* LogoIcon 120120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 120120.png"; sourceTree = SOURCE_ROOT; };
+		09F229CB219AC5D30034E9D7 /* LogoIcon 5858.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 5858.png"; sourceTree = SOURCE_ROOT; };
+		09F229CD219AC62B0034E9D7 /* LogoIcon 8787.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 8787.png"; sourceTree = SOURCE_ROOT; };
+		09F229CF219AC6630034E9D7 /* LogoIcon 180180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 180180.png"; sourceTree = SOURCE_ROOT; };
+		09F229D1219AC69B0034E9D7 /* LogoIcon 7676.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 7676.png"; sourceTree = SOURCE_ROOT; };
+		09F229D3219AC6C40034E9D7 /* LogoIcon 152152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 152152.png"; sourceTree = SOURCE_ROOT; };
+		09F229D5219AC6E80034E9D7 /* LogoIcon 167167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 167167.png"; sourceTree = SOURCE_ROOT; };
+		09F229D7219AC71B0034E9D7 /* LogoIcon 10241024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoIcon 10241024.png"; sourceTree = SOURCE_ROOT; };
 		25248CF59E7F66C7FABAFC53 /* Pods-Test-CocoaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-CocoaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-CocoaTests/Pods-Test-CocoaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		34ACDB1D00CA10F976C7A409 /* Pods-Test-Cocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-Cocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test-Cocoa/Pods-Test-Cocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		55B4B6328580DACE7455E15C /* Pods-Test-CocoaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test-CocoaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test-CocoaTests/Pods-Test-CocoaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,9 +156,22 @@
 		099D52FB2175C19E00E7B228 /* Test-Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				09F229BD219AC3C90034E9D7 /* LogoIcon 2020.png */,
+				09F229C7219AC50F0034E9D7 /* LogoIcon 2929.png */,
+				09F229BE219AC3C90034E9D7 /* LogoIcon4040.png */,
+				09F229CB219AC5D30034E9D7 /* LogoIcon 5858.png */,
+				09F229BF219AC3C90034E9D7 /* LogoIcon 6060.png */,
+				09F229D1219AC69B0034E9D7 /* LogoIcon 7676.png */,
+				09F229C5219AC4E30034E9D7 /* LogoIcon 8080.png */,
+				09F229CD219AC62B0034E9D7 /* LogoIcon 8787.png */,
+				09F229C9219AC5900034E9D7 /* LogoIcon 120120.png */,
+				09F229D3219AC6C40034E9D7 /* LogoIcon 152152.png */,
+				09F229D5219AC6E80034E9D7 /* LogoIcon 167167.png */,
+				09F229CF219AC6630034E9D7 /* LogoIcon 180180.png */,
+				09F229D7219AC71B0034E9D7 /* LogoIcon 10241024.png */,
+				09F1F5572198118B000D2FCB /* Logo_Official.png */,
 				09F1F567219821FB000D2FCB /* Logo.png */,
 				09F1F5552198118B000D2FCB /* Header.jpg */,
-				09F1F5572198118B000D2FCB /* Logo_Official.png */,
 				09F1F56321981BA3000D2FCB /* Header.png */,
 				09F1F55321981096000D2FCB /* farias_header.png */,
 				099D52FC2175C19E00E7B228 /* AppDelegate.swift */,
@@ -297,14 +336,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F229D2219AC69B0034E9D7 /* LogoIcon 7676.png in Resources */,
+				09F229CA219AC5900034E9D7 /* LogoIcon 120120.png in Resources */,
+				09F229C0219AC3C90034E9D7 /* LogoIcon 2020.png in Resources */,
+				09F229C2219AC3C90034E9D7 /* LogoIcon 6060.png in Resources */,
+				09F229D8219AC71C0034E9D7 /* LogoIcon 10241024.png in Resources */,
 				099D53072175C1BC00E7B228 /* LaunchScreen.storyboard in Resources */,
+				09F229CC219AC5D30034E9D7 /* LogoIcon 5858.png in Resources */,
+				09F229C1219AC3C90034E9D7 /* LogoIcon4040.png in Resources */,
 				09F1F5582198118B000D2FCB /* Header.jpg in Resources */,
 				09F1F55A2198118B000D2FCB /* Logo_Official.png in Resources */,
+				09F229C6219AC4E30034E9D7 /* LogoIcon 8080.png in Resources */,
 				099D53042175C1BC00E7B228 /* Assets.xcassets in Resources */,
 				09F1F568219821FB000D2FCB /* Logo.png in Resources */,
+				09F229D6219AC6E80034E9D7 /* LogoIcon 167167.png in Resources */,
 				09F1F55421981097000D2FCB /* farias_header.png in Resources */,
+				09F229CE219AC62B0034E9D7 /* LogoIcon 8787.png in Resources */,
 				09F1F56421981BA3000D2FCB /* Header.png in Resources */,
 				099D53022175C19E00E7B228 /* Main.storyboard in Resources */,
+				09F229D4219AC6C40034E9D7 /* LogoIcon 152152.png in Resources */,
+				09F229D0219AC6630034E9D7 /* LogoIcon 180180.png in Resources */,
+				09F229C8219AC5100034E9D7 /* LogoIcon 2929.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

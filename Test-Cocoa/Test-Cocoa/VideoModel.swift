@@ -37,9 +37,10 @@ class VideoModel: NSObject {
                     let video = JSON["items"] as! NSArray
                     print(video)
                     
-                    for i in 0..<playlist.count {
-                
                     
+                var i = playlist.count
+                    i = i-1
+                        while i >= 0 {
                     
                     let videoObj = Video()
                         if let video = playlist[i] as? [String: Any]{
@@ -72,12 +73,10 @@ class VideoModel: NSObject {
                                 }
                                 }}
                             }
-                    //videoObj.videoTitle = Video.value(forKeyPath: "snipper.tittle") as! String
-                    //videoObj.videoDescription = Video.value(forKeyPath: "snippet.description") as! String
-                    //videoObj.videoThumbnailURL = Video.value(forKeyPath: "snippet.thumbnails.maxres.url") as! String
+            
                     arrayOfVideos.append(videoObj)
                         }
-                        
+                        i = i-1
                     }
                     self.videoArray = arrayOfVideos
                     //Notify the Delegate that the data is ready
