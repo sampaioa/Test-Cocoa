@@ -18,11 +18,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let model: VideoModel = VideoModel()
     let imageView = UIImageView(image: UIImage(named: "Logo.png"))
     
+    var refreshControl   = UIRefreshControl()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //self.videos = VideoModel().getVideos()
         
+        loadVideos()
+        
+        
+        setupUI()
+        
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        self.tableView.addSubview(refreshControl)
+        
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+}
+    
+    func loadVideos(){
         self.model.delegate = self
         //let model = VideoModel()
         //Fire of request to get videos
@@ -31,20 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
-        //let width = self.view.frame.size.width
-        //let height = self.view.frame.size.height
-        
-        //let imageView = UIImageView()//(frame: CGRect(x: 0, y: 0, width: 5, height: 5))
-        //imageView.contentMode = .center
-        //let logo = UIImage(named: "Header.png")
-        //let image = UIImageView(image:logo)
-        //self.navigationItem.titleView = image
-        
-        
-        
-        setupUI()
-}
+    }
     
     //VideoModel Delegate Method
     func dataReady(){
@@ -144,17 +147,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         /// Height of NavBar for Small state. Usually it's just 44
         static let NavBarHeightSmallState: CGFloat = 44
         /// Height of NavBar for Large state. Usually it's just 96.5 but if you have a custom font for the title, please make sure to edit this value since it changes the height for Large state of NavBar
-        static let NavBarHeightLargeState: CGFloat = 96.5
+        static let NavBarHeightLargeState: CGFloat = 44
     }
     
     private func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        title = "Farias"
+        title = "Farias do Mesmo Saco - Filmes e Series"
         
-        
-
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [
+            //NSAttributedString.Key.foregroundColor: UIColor.red,
+            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)
+        ]
     
+        
         
         
         // Initial setup for image for Large NavBar state since the the screen always has Large NavBar once it gets opened
@@ -169,7 +175,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             imageView.heightAnchor.constraint(equalToConstant: Const.ImageSizeForLargeState),
             imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor)
             ])
+        
+ 
     }
+    
+    @objc func refresh(_ sender: Any) {
+        
+        self.tableView.reloadData()
+        loadVideos()
+        refreshControl.endRefreshing()
+        
+        // Call webservice here after reload tableview.
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+
+
     
 }
 

@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1048.8" y="42.728635682158924"/>
         </scene>
-        <!--View Controller-->
+        <!--tetert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="tetert" id="BYZ-38-t0r" customClass="ViewController" customModule="Test_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
