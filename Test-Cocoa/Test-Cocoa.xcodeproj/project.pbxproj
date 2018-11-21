@@ -10,6 +10,8 @@
 		09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250004217DA76B004B0350 /* VideoDetailViewController.swift */; };
 		093AFEAA2178609C00B66E20 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEA92178609C00B66E20 /* Video.swift */; };
 		093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEAB2178624E00B66E20 /* VideoModel.swift */; };
+		0940F8F021A5309800C7E142 /* appstoreLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0940F8EF21A5309800C7E142 /* appstoreLogo.png */; };
+		0940F8F221A5326F00C7E142 /* appstoreLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */; };
 		099D52FD2175C19E00E7B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D52FC2175C19E00E7B228 /* AppDelegate.swift */; };
 		099D52FF2175C19E00E7B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D52FE2175C19E00E7B228 /* ViewController.swift */; };
 		099D53022175C19E00E7B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099D53002175C19E00E7B228 /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		09250004217DA76B004B0350 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		093AFEA92178609C00B66E20 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		093AFEAB2178624E00B66E20 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		0940F8EF21A5309800C7E142 /* appstoreLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstoreLogo.png; sourceTree = SOURCE_ROOT; };
+		0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appstoreLogo.jpg; sourceTree = SOURCE_ROOT; };
 		099D52F92175C19E00E7B228 /* Test-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D52FC2175C19E00E7B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099D52FE2175C19E00E7B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 		099D52FB2175C19E00E7B228 /* Test-Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				0940F8EF21A5309800C7E142 /* appstoreLogo.png */,
+				0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */,
 				09F229BD219AC3C90034E9D7 /* LogoIcon 2020.png */,
 				09F229C7219AC50F0034E9D7 /* LogoIcon 2929.png */,
 				09F229BE219AC3C90034E9D7 /* LogoIcon4040.png */,
@@ -339,6 +345,7 @@
 				09F229D2219AC69B0034E9D7 /* LogoIcon 7676.png in Resources */,
 				09F229CA219AC5900034E9D7 /* LogoIcon 120120.png in Resources */,
 				09F229C0219AC3C90034E9D7 /* LogoIcon 2020.png in Resources */,
+				0940F8F221A5326F00C7E142 /* appstoreLogo.jpg in Resources */,
 				09F229C2219AC3C90034E9D7 /* LogoIcon 6060.png in Resources */,
 				09F229D8219AC71C0034E9D7 /* LogoIcon 10241024.png in Resources */,
 				099D53072175C1BC00E7B228 /* LaunchScreen.storyboard in Resources */,
@@ -350,6 +357,7 @@
 				099D53042175C1BC00E7B228 /* Assets.xcassets in Resources */,
 				09F1F568219821FB000D2FCB /* Logo.png in Resources */,
 				09F229D6219AC6E80034E9D7 /* LogoIcon 167167.png in Resources */,
+				0940F8F021A5309800C7E142 /* appstoreLogo.png in Resources */,
 				09F1F55421981097000D2FCB /* farias_header.png in Resources */,
 				09F229CE219AC62B0034E9D7 /* LogoIcon 8787.png in Resources */,
 				09F1F56421981BA3000D2FCB /* Header.png in Resources */,
