@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0902451321C117BF00F557EC /* popupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0902451221C117BF00F557EC /* popupVC.swift */; };
 		09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250004217DA76B004B0350 /* VideoDetailViewController.swift */; };
 		093AFEAA2178609C00B66E20 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEA92178609C00B66E20 /* Video.swift */; };
 		093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEAB2178624E00B66E20 /* VideoModel.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0902451221C117BF00F557EC /* popupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupVC.swift; sourceTree = "<group>"; };
 		09250004217DA76B004B0350 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		093AFEA92178609C00B66E20 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		093AFEAB2178624E00B66E20 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -67,7 +69,7 @@
 		0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appstoreLogo.jpg; sourceTree = SOURCE_ROOT; };
 		099D52F92175C19E00E7B228 /* Test-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D52FC2175C19E00E7B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		099D52FE2175C19E00E7B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		099D52FE2175C19E00E7B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		099D53012175C19E00E7B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		099D53032175C1BC00E7B228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		099D53062175C1BC00E7B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				09F1F56321981BA3000D2FCB /* Header.png */,
 				09F1F55321981096000D2FCB /* farias_header.png */,
 				099D52FC2175C19E00E7B228 /* AppDelegate.swift */,
+				0902451221C117BF00F557EC /* popupVC.swift */,
 				099D52FE2175C19E00E7B228 /* ViewController.swift */,
 				09250004217DA76B004B0350 /* VideoDetailViewController.swift */,
 				093AFEA92178609C00B66E20 /* Video.swift */,
@@ -395,6 +398,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test-Cocoa/Pods-Test-Cocoa-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -402,6 +409,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +498,7 @@
 				099D52FD2175C19E00E7B228 /* AppDelegate.swift in Sources */,
 				09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */,
 				093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */,
+				0902451321C117BF00F557EC /* popupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

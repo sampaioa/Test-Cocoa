@@ -12,6 +12,10 @@ pod 'Alamofire', '~> 4.7'
 
 pod "youtube-ios-player-helper", "~> 0.1.4"
 
+pod 'FBSDKCoreKit'
+pod 'FBSDKShareKit'
+pod 'FBSDKLoginKit'
+
 #pod "YouTube-Player-iOS-Helper", "~>0.1"
 
   target 'Test-CocoaTests' do
