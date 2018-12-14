@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0902451321C117BF00F557EC /* popupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0902451221C117BF00F557EC /* popupVC.swift */; };
+		0902451721C3B04900F557EC /* popupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0902451621C3B04800F557EC /* popupVC.swift */; };
 		09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250004217DA76B004B0350 /* VideoDetailViewController.swift */; };
 		093AFEAA2178609C00B66E20 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEA92178609C00B66E20 /* Video.swift */; };
 		093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEAB2178624E00B66E20 /* VideoModel.swift */; };
@@ -61,7 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0902451221C117BF00F557EC /* popupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popupVC.swift; sourceTree = "<group>"; };
+		0902451621C3B04800F557EC /* popupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = popupVC.swift; path = "/Users/andresampaio/Desktop/Test-Cocoa/Test-Cocoa/Test-Cocoa/popupVC.swift"; sourceTree = "<absolute>"; };
+		0902451821C3B0E300F557EC /* Test-Cocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Test-Cocoa.entitlements"; sourceTree = "<group>"; };
 		09250004217DA76B004B0350 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		093AFEA92178609C00B66E20 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		093AFEAB2178624E00B66E20 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		099D52FB2175C19E00E7B228 /* Test-Cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				0902451821C3B0E300F557EC /* Test-Cocoa.entitlements */,
 				0940F8EF21A5309800C7E142 /* appstoreLogo.png */,
 				0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */,
 				09F229BD219AC3C90034E9D7 /* LogoIcon 2020.png */,
@@ -183,7 +185,7 @@
 				09F1F56321981BA3000D2FCB /* Header.png */,
 				09F1F55321981096000D2FCB /* farias_header.png */,
 				099D52FC2175C19E00E7B228 /* AppDelegate.swift */,
-				0902451221C117BF00F557EC /* popupVC.swift */,
+				0902451621C3B04800F557EC /* popupVC.swift */,
 				099D52FE2175C19E00E7B228 /* ViewController.swift */,
 				09250004217DA76B004B0350 /* VideoDetailViewController.swift */,
 				093AFEA92178609C00B66E20 /* Video.swift */,
@@ -309,6 +311,11 @@
 				TargetAttributes = {
 					099D52F82175C19E00E7B228 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					099D530C2175C1BE00E7B228 = {
 						CreatedOnToolsVersion = 10.0;
@@ -497,8 +504,8 @@
 				093AFEAA2178609C00B66E20 /* Video.swift in Sources */,
 				099D52FD2175C19E00E7B228 /* AppDelegate.swift in Sources */,
 				09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */,
+				0902451721C3B04900F557EC /* popupVC.swift in Sources */,
 				093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */,
-				0902451321C117BF00F557EC /* popupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +681,7 @@
 			baseConfigurationReference = 34ACDB1D00CA10F976C7A409 /* Pods-Test-Cocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Test-Cocoa/Test-Cocoa.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W95UAUZC2;
 				INFOPLIST_FILE = "Test-Cocoa/Info.plist";
@@ -693,6 +701,7 @@
 			baseConfigurationReference = AC3302F9EF33DD91E03CA32A /* Pods-Test-Cocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Test-Cocoa/Test-Cocoa.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W95UAUZC2;
 				INFOPLIST_FILE = "Test-Cocoa/Info.plist";

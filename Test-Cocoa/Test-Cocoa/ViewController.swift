@@ -9,7 +9,7 @@
 import UIKit
 //import FBSDKCoreKit
 //import FBSDKShareKit
-import FBSDKLoginKit
+//import FBSDKLoginKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, VideoModelDelegate {
     
@@ -131,9 +131,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get a reference to the destination view controller
+        if  segue.identifier == "goToDetail" as String?{
         let detailViewController = segue.destination as! VideoDetailViewController
         // Set the selected video property of the destination view controller
         detailViewController.selectedVideo = self.selectedVideo
+        }
     }
     
 //    struct Const {
@@ -198,8 +200,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 
-
-
+//Popup screen for login
+    
+    @IBOutlet var popOver: UIView!
+    
+    @IBAction func popBT(_ sender: Any)
+    {
+        self.view.addSubview(popOver)
+        popOver.center = self.view.center
+    }
+    
+    
     
 }
 

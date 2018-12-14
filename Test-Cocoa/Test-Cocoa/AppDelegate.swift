@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         // Add any custom logic here.
         
+        
+        //Facebook
         let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: (options [UIApplication.OpenURLOptionsKey.sourceApplication] as! String), annotation: options[UIApplication.OpenURLOptionsKey.annotation])
         
         return handled

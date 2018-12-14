@@ -11,6 +11,12 @@ import FBSDKLoginKit
 
 class popupVC: UIViewController, FBSDKLoginButtonDelegate {
     
+        @IBOutlet weak var closePopupVCBT: UIButton!
+    
+    @IBOutlet weak var loginDescLB: UILabel!
+    
+    @IBOutlet weak var loginView: UIView!
+    
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         if error != nil {
@@ -24,16 +30,17 @@ class popupVC: UIViewController, FBSDKLoginButtonDelegate {
         print("Você deslogou do Facebook")
     }
     
-    @IBOutlet weak var closePopupVCBT: UIButton!
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let loginButton = FBSDKLoginButton()
-        view.addSubview(loginButton)
+        loginView.addSubview(loginButton)
         //Replace frames by constrains, frames are obsolete
-        loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+        loginButton.frame = CGRect(x: 16, y: loginDescLB.frame.origin.y + loginDescLB.frame.height + 20 , width: view.frame.width - 32, height: 50)
+        
         
         
         
