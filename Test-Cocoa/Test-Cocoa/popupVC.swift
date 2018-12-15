@@ -23,7 +23,15 @@ class popupVC: UIViewController, FBSDKLoginButtonDelegate {
             print("erro")
             return
         }
-        print("Você logou com sua conta do Facebook...")
+        
+        FBSDKGraphRequest(graphPath: "/me", parameters:["fields": "id, name, email"])?.start(completionHandler: { (connection, result, err) in
+            if err != nil {
+                print("Erro ao iniciar Graph request", err)
+                return
+            }
+            
+            print(result)
+        })
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
@@ -42,9 +50,8 @@ class popupVC: UIViewController, FBSDKLoginButtonDelegate {
         loginButton.frame = CGRect(x: 16, y: loginDescLB.frame.origin.y + loginDescLB.frame.height + 20 , width: view.frame.width - 32, height: 50)
         
         
-        
-        
         loginButton.delegate = self
+        loginButton.readPermissions = ["email", "public_profile"]
     }
     
     @IBAction func Click(_ sender: Any) {
