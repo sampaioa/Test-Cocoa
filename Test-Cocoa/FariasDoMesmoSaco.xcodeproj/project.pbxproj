@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0902451721C3B04900F557EC /* popupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0902451621C3B04800F557EC /* popupVC.swift */; };
 		09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09250004217DA76B004B0350 /* VideoDetailViewController.swift */; };
 		093AFEAA2178609C00B66E20 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEA92178609C00B66E20 /* Video.swift */; };
 		093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AFEAB2178624E00B66E20 /* VideoModel.swift */; };
 		0940F8F021A5309800C7E142 /* appstoreLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0940F8EF21A5309800C7E142 /* appstoreLogo.png */; };
 		0940F8F221A5326F00C7E142 /* appstoreLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */; };
+		0972406921C4DC8D00AF3F65 /* popupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0972406821C4DC8D00AF3F65 /* popupVC.swift */; };
 		099D52FD2175C19E00E7B228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D52FC2175C19E00E7B228 /* AppDelegate.swift */; };
 		099D52FF2175C19E00E7B228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099D52FE2175C19E00E7B228 /* ViewController.swift */; };
 		099D53022175C19E00E7B228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 099D53002175C19E00E7B228 /* Main.storyboard */; };
@@ -61,24 +61,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0902451621C3B04800F557EC /* popupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = popupVC.swift; path = "/Users/andresampaio/Desktop/Test-Cocoa/Test-Cocoa/Test-Cocoa/popupVC.swift"; sourceTree = "<absolute>"; };
 		0902451821C3B0E300F557EC /* Test-Cocoa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Test-Cocoa.entitlements"; sourceTree = "<group>"; };
 		09250004217DA76B004B0350 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		093AFEA92178609C00B66E20 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		093AFEAB2178624E00B66E20 /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		0940F8EF21A5309800C7E142 /* appstoreLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstoreLogo.png; sourceTree = SOURCE_ROOT; };
 		0940F8F121A5326F00C7E142 /* appstoreLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appstoreLogo.jpg; sourceTree = SOURCE_ROOT; };
-		099D52F92175C19E00E7B228 /* Test-Cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0972406821C4DC8D00AF3F65 /* popupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popupVC.swift; sourceTree = "<group>"; };
+		099D52F92175C19E00E7B228 /* FariasDoMesmoSaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FariasDoMesmoSaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D52FC2175C19E00E7B228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		099D52FE2175C19E00E7B228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		099D53012175C19E00E7B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		099D53032175C1BC00E7B228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		099D53062175C1BC00E7B228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		099D53082175C1BC00E7B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		099D530D2175C1BE00E7B228 /* Test-CocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-CocoaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099D530D2175C1BE00E7B228 /* FariasDoMesmoSacoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FariasDoMesmoSacoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D53112175C1BF00E7B228 /* Test_CocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CocoaTests.swift; sourceTree = "<group>"; };
 		099D53132175C1BF00E7B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		099D53182175C1BF00E7B228 /* Test-CocoaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test-CocoaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		099D53182175C1BF00E7B228 /* FariasDoMesmoSacoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FariasDoMesmoSacoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		099D531C2175C1BF00E7B228 /* Test_CocoaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_CocoaUITests.swift; sourceTree = "<group>"; };
 		099D531E2175C1BF00E7B228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09F1F55321981096000D2FCB /* farias_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = farias_header.png; sourceTree = SOURCE_ROOT; };
@@ -141,7 +141,7 @@
 		099D52F02175C19E00E7B228 = {
 			isa = PBXGroup;
 			children = (
-				099D52FB2175C19E00E7B228 /* Test-Cocoa */,
+				099D52FB2175C19E00E7B228 /* FariasDoMesmoSaco */,
 				099D53102175C1BF00E7B228 /* Test-CocoaTests */,
 				099D531B2175C1BF00E7B228 /* Test-CocoaUITests */,
 				099D52FA2175C19E00E7B228 /* Products */,
@@ -153,14 +153,14 @@
 		099D52FA2175C19E00E7B228 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				099D52F92175C19E00E7B228 /* Test-Cocoa.app */,
-				099D530D2175C1BE00E7B228 /* Test-CocoaTests.xctest */,
-				099D53182175C1BF00E7B228 /* Test-CocoaUITests.xctest */,
+				099D52F92175C19E00E7B228 /* FariasDoMesmoSaco.app */,
+				099D530D2175C1BE00E7B228 /* FariasDoMesmoSacoTests.xctest */,
+				099D53182175C1BF00E7B228 /* FariasDoMesmoSacoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		099D52FB2175C19E00E7B228 /* Test-Cocoa */ = {
+		099D52FB2175C19E00E7B228 /* FariasDoMesmoSaco */ = {
 			isa = PBXGroup;
 			children = (
 				0902451821C3B0E300F557EC /* Test-Cocoa.entitlements */,
@@ -185,7 +185,7 @@
 				09F1F56321981BA3000D2FCB /* Header.png */,
 				09F1F55321981096000D2FCB /* farias_header.png */,
 				099D52FC2175C19E00E7B228 /* AppDelegate.swift */,
-				0902451621C3B04800F557EC /* popupVC.swift */,
+				0972406821C4DC8D00AF3F65 /* popupVC.swift */,
 				099D52FE2175C19E00E7B228 /* ViewController.swift */,
 				09250004217DA76B004B0350 /* VideoDetailViewController.swift */,
 				093AFEA92178609C00B66E20 /* Video.swift */,
@@ -195,7 +195,7 @@
 				099D53052175C1BC00E7B228 /* LaunchScreen.storyboard */,
 				099D53082175C1BC00E7B228 /* Info.plist */,
 			);
-			path = "Test-Cocoa";
+			path = FariasDoMesmoSaco;
 			sourceTree = "<group>";
 		};
 		099D53102175C1BF00E7B228 /* Test-CocoaTests */ = {
@@ -242,9 +242,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		099D52F82175C19E00E7B228 /* Test-Cocoa */ = {
+		099D52F82175C19E00E7B228 /* FariasDoMesmoSaco */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 099D53212175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-Cocoa" */;
+			buildConfigurationList = 099D53212175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSaco" */;
 			buildPhases = (
 				BB5183AE2863C5A9C84C9AC8 /* [CP] Check Pods Manifest.lock */,
 				099D52F52175C19E00E7B228 /* Sources */,
@@ -256,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = "Test-Cocoa";
+			name = FariasDoMesmoSaco;
 			productName = "Test-Cocoa";
-			productReference = 099D52F92175C19E00E7B228 /* Test-Cocoa.app */;
+			productReference = 099D52F92175C19E00E7B228 /* FariasDoMesmoSaco.app */;
 			productType = "com.apple.product-type.application";
 		};
-		099D530C2175C1BE00E7B228 /* Test-CocoaTests */ = {
+		099D530C2175C1BE00E7B228 /* FariasDoMesmoSacoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 099D53242175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-CocoaTests" */;
+			buildConfigurationList = 099D53242175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSacoTests" */;
 			buildPhases = (
 				B512DFE92FD354CBDC1C13EA /* [CP] Check Pods Manifest.lock */,
 				099D53092175C1BE00E7B228 /* Sources */,
@@ -275,14 +275,14 @@
 			dependencies = (
 				099D530F2175C1BF00E7B228 /* PBXTargetDependency */,
 			);
-			name = "Test-CocoaTests";
+			name = FariasDoMesmoSacoTests;
 			productName = "Test-CocoaTests";
-			productReference = 099D530D2175C1BE00E7B228 /* Test-CocoaTests.xctest */;
+			productReference = 099D530D2175C1BE00E7B228 /* FariasDoMesmoSacoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		099D53172175C1BF00E7B228 /* Test-CocoaUITests */ = {
+		099D53172175C1BF00E7B228 /* FariasDoMesmoSacoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 099D53272175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-CocoaUITests" */;
+			buildConfigurationList = 099D53272175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSacoUITests" */;
 			buildPhases = (
 				C8DCA1F7D4938CC340E3204F /* [CP] Check Pods Manifest.lock */,
 				099D53142175C1BF00E7B228 /* Sources */,
@@ -294,9 +294,9 @@
 			dependencies = (
 				099D531A2175C1BF00E7B228 /* PBXTargetDependency */,
 			);
-			name = "Test-CocoaUITests";
+			name = FariasDoMesmoSacoUITests;
 			productName = "Test-CocoaUITests";
-			productReference = 099D53182175C1BF00E7B228 /* Test-CocoaUITests.xctest */;
+			productReference = 099D53182175C1BF00E7B228 /* FariasDoMesmoSacoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +327,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 099D52F42175C19E00E7B228 /* Build configuration list for PBXProject "Test-Cocoa" */;
+			buildConfigurationList = 099D52F42175C19E00E7B228 /* Build configuration list for PBXProject "FariasDoMesmoSaco" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -340,9 +340,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				099D52F82175C19E00E7B228 /* Test-Cocoa */,
-				099D530C2175C1BE00E7B228 /* Test-CocoaTests */,
-				099D53172175C1BF00E7B228 /* Test-CocoaUITests */,
+				099D52F82175C19E00E7B228 /* FariasDoMesmoSaco */,
+				099D530C2175C1BE00E7B228 /* FariasDoMesmoSacoTests */,
+				099D53172175C1BF00E7B228 /* FariasDoMesmoSacoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -504,7 +504,7 @@
 				093AFEAA2178609C00B66E20 /* Video.swift in Sources */,
 				099D52FD2175C19E00E7B228 /* AppDelegate.swift in Sources */,
 				09250005217DA76B004B0350 /* VideoDetailViewController.swift in Sources */,
-				0902451721C3B04900F557EC /* popupVC.swift in Sources */,
+				0972406921C4DC8D00AF3F65 /* popupVC.swift in Sources */,
 				093AFEAC2178624E00B66E20 /* VideoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,12 +530,12 @@
 /* Begin PBXTargetDependency section */
 		099D530F2175C1BF00E7B228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 099D52F82175C19E00E7B228 /* Test-Cocoa */;
+			target = 099D52F82175C19E00E7B228 /* FariasDoMesmoSaco */;
 			targetProxy = 099D530E2175C1BF00E7B228 /* PBXContainerItemProxy */;
 		};
 		099D531A2175C1BF00E7B228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 099D52F82175C19E00E7B228 /* Test-Cocoa */;
+			target = 099D52F82175C19E00E7B228 /* FariasDoMesmoSaco */;
 			targetProxy = 099D53192175C1BF00E7B228 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -734,7 +734,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test-Cocoa.app/Test-Cocoa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FariasDoMesmoSaco.app/FariasDoMesmoSaco";
 			};
 			name = Debug;
 		};
@@ -756,7 +756,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test-Cocoa.app/Test-Cocoa";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FariasDoMesmoSaco.app/FariasDoMesmoSaco";
 			};
 			name = Release;
 		};
@@ -805,7 +805,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		099D52F42175C19E00E7B228 /* Build configuration list for PBXProject "Test-Cocoa" */ = {
+		099D52F42175C19E00E7B228 /* Build configuration list for PBXProject "FariasDoMesmoSaco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				099D531F2175C1BF00E7B228 /* Debug */,
@@ -814,7 +814,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		099D53212175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-Cocoa" */ = {
+		099D53212175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSaco" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				099D53222175C1BF00E7B228 /* Debug */,
@@ -823,7 +823,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		099D53242175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-CocoaTests" */ = {
+		099D53242175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSacoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				099D53252175C1BF00E7B228 /* Debug */,
@@ -832,7 +832,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		099D53272175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "Test-CocoaUITests" */ = {
+		099D53272175C1BF00E7B228 /* Build configuration list for PBXNativeTarget "FariasDoMesmoSacoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				099D53282175C1BF00E7B228 /* Debug */,
