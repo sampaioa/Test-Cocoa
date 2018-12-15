@@ -681,10 +681,10 @@
 			baseConfigurationReference = 34ACDB1D00CA10F976C7A409 /* Pods-Test-Cocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Test-Cocoa/Test-Cocoa.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FariasDoMesmoSaco/Test-Cocoa.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W95UAUZC2;
-				INFOPLIST_FILE = "Test-Cocoa/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FariasDoMesmoSaco/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,10 +701,10 @@
 			baseConfigurationReference = AC3302F9EF33DD91E03CA32A /* Pods-Test-Cocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Test-Cocoa/Test-Cocoa.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FariasDoMesmoSaco/Test-Cocoa.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9W95UAUZC2;
-				INFOPLIST_FILE = "Test-Cocoa/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FariasDoMesmoSaco/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

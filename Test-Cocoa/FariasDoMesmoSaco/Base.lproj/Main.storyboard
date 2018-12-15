@@ -12,7 +12,7 @@
         <!--Video Detail View Controller-->
         <scene sceneID="46a-TN-D3l">
             <objects>
-                <viewController id="XyN-id-Nv5" customClass="VideoDetailViewController" customModule="Test_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XyN-id-Nv5" customClass="VideoDetailViewController" customModule="FariasDoMesmoSaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0TA-Z7-4wu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
         <!--PopupVC-->
         <scene sceneID="DNe-da-fbP">
             <objects>
-                <viewController id="kM3-4k-ePV" customClass="popupVC" customModule="Test_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kM3-4k-ePV" customClass="popupVC" customModule="FariasDoMesmoSaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2M5-Iu-KgQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
         <!--View Controler Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="View Controler Scene" id="BYZ-38-t0r" customClass="ViewController" customModule="Test_Cocoa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="View Controler Scene" id="BYZ-38-t0r" customClass="ViewController" customModule="FariasDoMesmoSaco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
