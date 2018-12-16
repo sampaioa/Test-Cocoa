@@ -2,11 +2,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
-target 'Test-Cocoa' do
+target 'FariasDoMesmoSaco' do
 
   use_frameworks!
 
-  # Pods for Test-Cocoa
+  # Pods for FariasDoMesmoSaco
 
 pod 'Alamofire', '~> 4.7'
 
@@ -15,15 +15,17 @@ pod "youtube-ios-player-helper", "~> 0.1.4"
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
+pod 'Firebase/Core'
+pod 'GoogleSignIn'
 
 #pod "YouTube-Player-iOS-Helper", "~>0.1"
 
-  target 'Test-CocoaTests' do
+  target 'FariasDoMesmoSacoTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'Test-CocoaUITests' do
+  target 'FariasDoMesmoSacoUITests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -1,0 +1,6 @@
+framework module Pods_FariasDoMesmoSacoUITests {
+  umbrella header "Pods-FariasDoMesmoSacoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
