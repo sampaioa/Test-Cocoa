@@ -15,7 +15,7 @@ pod "youtube-ios-player-helper", "~> 0.1.4"
 pod 'FBSDKCoreKit'
 pod 'FBSDKShareKit'
 pod 'FBSDKLoginKit'
-pod 'Firebase/Core'
+pod 'Firebase/Auth'
 pod 'GoogleSignIn'
 
 #pod "YouTube-Player-iOS-Helper", "~>0.1"

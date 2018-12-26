@@ -51,6 +51,9 @@ class popupVC: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
         
         setupFacebookButtons()
         setupGoogleButtons()
+        
+        GIDSignIn.sharedInstance()?.uiDelegate = self
+        
         }
     
     fileprivate func setupGoogleButtons() {
@@ -59,7 +62,7 @@ class popupVC: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate {
         googleButton.frame = CGRect(x: 16, y: loginButton.frame.origin.y + loginButton.frame.height + 20 , width: view.frame.width - 32, height: 50)
         loginView.addSubview(googleButton)
         
-        GIDSignIn.sharedInstance()?.uiDelegate = self
+        //GIDSignIn.sharedInstance()?.uiDelegate = self
         
     }
     
